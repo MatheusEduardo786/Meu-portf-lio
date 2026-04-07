@@ -1,0 +1,61 @@
+:root {
+    --cor-pricipal: #6E859F ;
+    --cor-secundaria: #284260;
+    --cor-destaque: #38e914;
+    --cor-texto: #FFFFFF;
+    --corAzul: #17043b;
+    --corAmarela: #fbca2d;
+    --corVermelha: #ff0000;
+    --corAzulEscuro: #090117;
+}
+
+/* Estilo do formulário de contato */
+
+section.contato {
+    padding: 80px 0;
+    background-color: var(--corAzul);
+}
+
+.contato > .interface {
+    display: flex;
+    flex-direction: space-between;
+}
+
+.texto-contato p{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.texto-contato i {
+    color: var(--corAmarela);
+    font-size: 2rem;
+}
+
+.contato form {
+    width: 50%;
+}
+
+.contato form input ,.contato form textarea {
+    width: 100%;
+    padding: 16px 10px;
+    background: transparent;
+    border: 2px solid var(--corAmarela);
+    outline: none;
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.contato form .tel-proj {
+    display: flex;
+    align-items: center;
+    gap : 8px;
+}
+
+.contato form textarea {
+    resize: none;
+}

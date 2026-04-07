@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-pricipal: #6E859F ;
+    --cor-secundaria: #284260;
+    --cor-destaque: #38e914;
+    --cor-texto: #FFFFFF;
+    --corAzul: #17043b;
+    --corAmarela: #fbca2d;
+    --corVermelha: #ff0000;
+    --corAzulEscuro: #090117;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-pricipal);
+    background-color: var(--corAzulEscuro);
+}
+
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lead, .btn-link {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a, .btn-link:hover {
+    color: var(--corAmarela);
+}
+
+a:hover {
+    color: var(--cor-destaque);
+}
+
+.card {
+    background-color: var(--cor-secundaria);
+}
+
+.card-body h5 {
+    color: var(--cor-texto);
+}
+
+.card-body p {
+    color: var(--cor-texto);
+}
+
+.interface{
+    max-width: 1300px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--cor-texto);
+    border-radius: 8px;
+    color: var(--cor-texto);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--corAmarela);
+    color: var(--corAzul);
+    transition: .5s;
+}
+
+.titulo-linguas{
+  color: #aaa;
+  /* margin-top: 60px; */
+}
+
+.titulo-experiencia{
+  color: #38e914;
+  margin-bottom: 40px;
+}
+
+.titulo-section {
+    color: var(--cor-texto);
+    font-size: 4rem;
+}
+
+.titulo-section span {
+    color: var(--corAmarela);
+}
+
+/* Estilos do cabeçalho */
+
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logotipo_cabecalho img{
+    max-width: 100px;
+    border-radius: 50px;
+}
+
+header nav.menu-desktop ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 56px;
+}
+
+header nav.menu-desktop a{
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+header nav.menu-desktop a:hover {
+    color: var(--corAmarela);
+}
+
+header nav.menu-desktop button {
+    width: 144px;
+    height: 48px;
+}
+
+/* Estilos do Hero */
+
+section.hero {
+    background-image: linear-gradient(to left, var(--corAzul) 70%, var(--corAmarela) 30%);
+    padding-top: 144px;
+}
+
+.hero .img-hero {
+    line-height: 0;
+}
+
+.hero .img-hero img {
+    width: 400px;
+}
+
+.hero > .interface {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero .texto-hero h1 {
+    font-size: 3rem;
+    color: var(--cor-texto);
+    font-weight: 300;
+}
+
+.hero .texto-hero h1 samp{
+    color: var(--corVermelha);
+    display: block;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.hero .texto-hero p {
+    color: var(--cor-texto);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.hero .texto-hero button {
+    width: 200px;
+    height: 40px;
+}
+
+/* Estilos do Sobre */
+
+section.sobre-min {
+    padding: 80px 0;
+}
+
+.sobre-min .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+/* imagem */
+
+.foto-sobre {
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* texto */
+
+.sobre-min .texto-sobre p {
+    color: var(--cor-texto);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+/* botões redes */
+
+.btn-redes button {
+    width: 56px;
+    height: 56px;
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+/* Experiencia Cards */
+.card-exp {
+  background: var(--corAzulEscuro);
+  border-radius: 25px;
+  padding: 30px;
+  color: white;
+  transition: .4s;
+}
+
+.card-exp:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 20px #38e91444;
+}
+
+.card-exp h4 {
+  color: var(--cor-texto);
+  margin-bottom: 25px;
+}
+
+.card-exp samp {
+    color: var(--corAmarela);
+}
+
+/* grid interna */
+.grid-exp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.grid-exp i {
+  font-size: 25px;
+  color: var(--corAmarela);
+}
+
+.grid-exp p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.grid-exp span {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Estilos da Seção de Habilidades */
+
+section.experiencia {
+    padding: 80px 0;
+    background-color: var(--corAzul);
+}
+
+.experiencia article {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 14px;
+    margin: 24px 0;
+}
+
+.experiencia .box-skills {
+    background-color: var(--corAzulEscuro);
+    padding: 24px;
+    border-radius: 16px;
+}
+.box-skills .icon-skills {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.box-skills .icon-skills img {
+    max-width: 70px;
+    margin-bottom: 16px;
+}
+
+.box-skills h2 {
+    color: var(--cor-texto);
+}
+
+.box-skills samp {
+    color: var(--corAmarela);
+}
+
+.box-skills p {
+    color: var(--cor-texto);
+    text-align: justify;
+}
+
+.experiencia .btn-contato {
+    text-align: center;
+}
+
+.experiencia .btn-contato button {
+    width: 200px;
+    height: 48px;
+}
+
+/* Estilos da Seção de Projetos */
+
+.meus-projetos samp {
+    color: var(--corAmarela);
+}
+
+.meus-projetos {
+    padding: 80px 0;
+}
