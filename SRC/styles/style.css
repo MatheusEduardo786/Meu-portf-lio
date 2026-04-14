@@ -103,6 +103,8 @@ header {
     background-color: transparent;
     position: fixed;
     width: 100%;
+    background-image: linear-gradient(to left, var(--corAzul) 70%, var(--corAmarela) 30%);
+    z-index: 1000;
 }
 
 header .interface {

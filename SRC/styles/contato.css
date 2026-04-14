@@ -18,27 +18,42 @@ section.contato {
 
 .contato > .interface {
     display: flex;
-    flex-direction: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.texto-contato p{
+/* texto lateral */
+
+.texto-contato {
+    width: 40%;
+}
+
+.texto-contato p {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 16px 0;
+
 }
 
 .texto-contato i {
     color: var(--corAmarela);
     font-size: 2rem;
+
 }
+
+/* formulário */
 
 .contato form {
     width: 50%;
 }
 
-.contato form input ,.contato form textarea {
+/* inputs */
+
+.contato form input,
+.contato form textarea {
     width: 100%;
     padding: 16px 10px;
     background: transparent;
@@ -47,15 +62,33 @@ section.contato {
     color: var(--cor-texto);
     font-size: 1.2rem;
     border-radius: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+
 }
+
+/* linha dupla */
 
 .contato form .tel-proj {
     display: flex;
-    align-items: center;
-    gap : 8px;
+    gap: 12px;
+
 }
+
+/* textarea */
 
 .contato form textarea {
     resize: none;
 }
+
+.contato form input:focus,
+.contato form textarea:focus {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 8px var(--cor-destaque);
+}
+
+.contato form input::placeholder,
+.contato form textarea::placeholder {
+    color: var(--cor-texto);
+    opacity: 0.7;
+}
+

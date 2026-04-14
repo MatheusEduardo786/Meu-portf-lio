@@ -1,0 +1,22 @@
+/* Estilos do rodapé */
+
+footer {
+    background: var(--corAzulEscuro);
+    padding: 40px 0;
+}
+/* container */
+
+.interface .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* texto */
+
+.produzidoMatheus {
+    color: var(--cor-texto);
+    font-size: 14px;
+}
