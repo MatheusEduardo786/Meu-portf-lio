@@ -6,7 +6,7 @@ footer {
 }
 /* container */
 
-.interface .footer-container{
+footer > .interface{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,4 +19,9 @@ footer {
 .produzidoMatheus {
     color: var(--cor-texto);
     font-size: 14px;
+}
+
+footer .produzidoMatheus img{
+    max-width: 200px;
+    margin: 16px 0;
 }

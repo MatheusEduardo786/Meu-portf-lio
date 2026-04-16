@@ -114,8 +114,8 @@ header .interface {
 }
 
 header .logotipo_cabecalho img{
-    max-width: 100px;
-    border-radius: 50px;
+    max-width: 200px;
+    margin: 16px 0;
 }
 
 header nav.menu-desktop ul{

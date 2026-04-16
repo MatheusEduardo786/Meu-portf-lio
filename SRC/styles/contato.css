@@ -84,6 +84,8 @@ section.contato {
 .contato form textarea:focus {
     border-color: var(--cor-destaque);
     box-shadow: 0 0 8px var(--cor-destaque);
+    background: transparent;
+    color: var(--cor-texto);
 }
 
 .contato form input::placeholder,
